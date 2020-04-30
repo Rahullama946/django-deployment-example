@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>welcome to relative</h1>
+<!-- start_app : other arrived from what we mention in urls.py of startapp folder-->
+<a href="{% url 'learn_app:others' %}">the other page</a>
+<a href="{% url 'admin:index'%}">admin link</a>
+<a href="{% url 'index' %}">link to index</a>
+</body>
+</html>
